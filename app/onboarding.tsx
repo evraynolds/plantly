@@ -1,4 +1,4 @@
-import { Text, View, StyleSheet, Button } from "react-native";
+import { Text, View, StyleSheet, Platform } from "react-native";
 import { theme } from "@/theme";
 import { useRouter } from "expo-router";
 import { useUserStore } from "@/store/userStore";
@@ -60,6 +60,10 @@ const styles = StyleSheet.create({
     fontSize: 24,
     color: theme.color.white,
     textAlign: "center",
-    padding: 16,
+    paddingHorizontal: 8,
+    fontFamily: Platform.select({
+      ios: "Caveat-Regular",
+      android: "Caveat_400Regular",
+    }),
   },
 });

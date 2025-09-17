@@ -35,6 +35,7 @@ const styles = StyleSheet.create({
     color: theme.color.white,
     fontSize: 18,
     fontWeight: "bold",
+    textAlign: "center",
   },
   button: {
     paddingHorizontal: 18,
